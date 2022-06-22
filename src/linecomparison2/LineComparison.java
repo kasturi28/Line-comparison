@@ -22,8 +22,8 @@ public class LineComparison {
 		// defining coordinates of the second line
 		int x3 = 8;
 		int y3 = 9;
-		int x4 = 10;
-		int y4 = 11;
+		int x4 = 11;
+		int y4 = 12;
 
 		// calculating the length of second line
 		System.out.println("Coordinates x3 and y3 of first point is " + x3 + ", " + y3);
@@ -35,12 +35,13 @@ public class LineComparison {
 		Double f1 = Double.valueOf(length1);
 		Double f2 = Double.valueOf(length2);
 
-		if (f1.equals(f2)) {
-			System.out.println("Line 1 & Line 2 are equal");
-		} else {
-			System.out.println("Line 1 & Line 2 are not equal");
-		}
-
+		if (f1 > f2) {
+			System.out.println("Line1 is grather than Line2...");
+		} else if (f2 > f1){
+			System.out.println("Line2 is grater than Line1...");
+		}else {
+			System.out.println("Line1 & Line2 are equal...");
 	}
 
+	}
 }
